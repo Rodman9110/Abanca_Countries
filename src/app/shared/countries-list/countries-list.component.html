@@ -1,0 +1,12 @@
+
+  <mat-nav-list *ngFor="let country of countries">
+    <mat-card>
+      <a
+        mat-list-item
+        [routerLink]="['/countries', country.id]"
+      > 
+        <img src="https://www.countryflags.io/{{ country.iso2Code }}/shiny/32.png" alt="" class="flags">
+        {{ country.name }}
+      </a>
+    </mat-card>
+    </mat-nav-list>

@@ -1,0 +1,13 @@
+<p>result works!!</p>
+
+<!-- <div *ngIf="search">
+        <div *ngIf="search.length != 0; else zero">
+            {{search.length}}
+        </div>
+    <p></p>
+</div> -->
+
+<app-search-list
+[search]="search|async"
+></app-search-list>
+
